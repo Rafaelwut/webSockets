@@ -1,0 +1,29 @@
+<div id='chatContainer' class='p-5 mb-2 text-dark mt-5 d-block container'>
+	<h3 class='text-start mt-5 mb-5 fw-bolder text-primary'>Centro de Mensajes</h3>
+	<form>
+		<input
+			type='text'
+			id='author'
+			class='form-control'
+			placeholder='nombre@email.com'
+			required="minlength=1"
+		/>
+		<div class='mt-5 d-block container' id='messages'></div>
+		<input
+			type='text'
+			id='text'
+			class='form-control'
+			placeholder='Escribe Aquí'
+			required="minlength=1"
+		/>
+		
+		<input
+			value='enviar'
+			class='btn btn-success mt-3 mb-5'
+			id='btn-chat'
+			onclick='addMessages()'
+			type="submit"
+		/>
+	</form>
+
+</div>
